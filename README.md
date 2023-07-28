@@ -2,9 +2,9 @@
 
 ## Overview
 
-Model Master is an open-source project designed to scrape data from Hugging Face and store the information using TiDB. The project employs Flask to construct a REST API, processing HTTP requests and interacting with the TiDB C2Q endpoint. The scraped data includes model name, size, popularity, link, task, languages, etc. The front end uses the Webflow content management system and hand-written JavaScript to display the information on a webpage.
+Model Master is a comprehensive collection website of AI models, catering specifically to AI engineers seeking models based on their requirements in various fields. We scrape data from Hugging Face and store the information using TiDB. The project employs Flask to construct a REST API, processing HTTP requests and interacting with the TiDB C2Q endpoint. The scraped data includes model name, size, popularity, link, task, languages, etc. The front end uses the Webflow content management system and hand-written JavaScript to display the information on a webpage.
 
-This project is utilizing Hugging Face, TiDB, and Webflow.
+This project is utilizing Flask framework, Hugging Face, TiDB, and Webflow.
 
 ## Dependencies
 
