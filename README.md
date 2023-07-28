@@ -56,10 +56,12 @@ python RESTapi.py
 
 This code opens and listens at localhost:8080, and makes corresponding API processing.
 
+
 **IMPORTANT: WEBSITE ONLY SUPPORTS RESOLUTION OF 1440PX OR MORE**
 
 After opening the REST API, go to website https://model-master.webflow.io/
 
+See FAQ#1 if needed.
 
 ## Additional Usage
 
