@@ -18,7 +18,7 @@ function makeAPIRequest(input_prompt, callback) {
         console.error('Error:', xhr.status, xhr.statusText);
 
         // Instead of returning, pass the error message to the callback function
-        callback(`Error: ${xhr.status} - Possible Cause is lack of REST API at localhost:8080`);
+        callback(`Error: ${xhr.status} - Possible Cause is lack of REST API at localhost:8080 - Visit our Github for instructions`);
       }
     }
   };
