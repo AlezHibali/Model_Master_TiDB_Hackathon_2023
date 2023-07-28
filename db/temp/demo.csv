@@ -1,0 +1,6 @@
+model_name,task,libraries,langugage,license,paper,likes,datasets,downloads_last_month,model_size,model_usage
+llama-2-7b,text generation,pytorch,english,,https://arxiv.org/pdf/2307.09288.pdf,813,,0,,1
+stable-diffusion-xl-base-0.9 ,text generation,diffusers,,other,https://arxiv.org/pdf/2108.01073.pdf,1.16k,,"233,647",,46
+Llama-2-13B-chat-GGML,text generation,pytorch; transformer,english,other,,228,,447,120GB,3
+chatglm2-6b,,pytorch; transformer,chinese; english,,https://arxiv.org/pdf/2103.10360.pdf,1.23k,,"1,379,029",12.5GB,63
+Baichuan-13B-Chat,text generation,pytorch; transformer,chinese; english,,https://arxiv.org/pdf/2104.09864.pdf,379,,"965,667",27GB,
