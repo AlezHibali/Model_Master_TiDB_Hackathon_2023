@@ -1,5 +1,7 @@
 # Model_Master_TiDB_Hackathon_2023
 
+![alt text](https://github.com/AlezHibali/Model_Master_TiDB_Hackathon_2023/blob/main/src/README_img/Screenshot.PNG)
+
 ## Overview
 
 Model Master is a comprehensive collection website of AI models, catering specifically to AI engineers seeking models based on their requirements in various fields. We scrape data from Hugging Face and store the information using TiDB. The project employs Flask to construct a REST API, processing HTTP requests and interacting with the TiDB C2Q endpoint. The scraped data includes model name, size, popularity, link, task, languages, etc. The front end uses the Webflow content management system and hand-written JavaScript to display the information on a webpage.
