@@ -58,6 +58,8 @@ This code opens and listens at localhost:8080, and makes corresponding API proce
 
 After opening the REST API, go to website https://model-master.webflow.io/
 
+website is best in resolution of 1440px
+
 ## Additional Usage
 
 If you want to use the Scraper:
