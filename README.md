@@ -56,9 +56,10 @@ python RESTapi.py
 
 This code opens and listens at localhost:8080, and makes corresponding API processing.
 
+**IMPORTANT: WEBSITE ONLY SUPPORTS RESOLUTION OF 1440PX OR MORE**
+
 After opening the REST API, go to website https://model-master.webflow.io/
 
-website is best in resolution of 1440px
 
 ## Additional Usage
 
@@ -87,3 +88,13 @@ For any questions or issues, please reach out to us on GitHub or email us at ali
 ## Acknowledgements
 
 We would like to thank Hugging Face, TiDB, and Webflow for their amazing functionalities that are used in this project.
+
+## FAQ
+
+### 1. Resolution Problem
+
+If you have resolution of 1440px or more but cannot correctly display the website, a possible solution might be:
+Scale might make your resolution less than 1440px, try to lower the scale
+
+![alt text](https://github.com/AlezHibali/Model_Master_TiDB_Hackathon_2023/blob/main/src/README_img/faq1.png)
+
