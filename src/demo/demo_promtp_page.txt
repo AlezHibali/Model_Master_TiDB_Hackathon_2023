@@ -1,0 +1,9 @@
+home page click: Llama-2-7b (换)
+scroll down, click related model: vit_base-224-in21k-ft-cifar100
+back to home
+browse all展示一下即可
+prompt: what is the number of downloads last month for model stable-diffusion-v1-5 and model gpt2 respectively
+click: stable-diffusion-v1-5
+back to home
+prompt: which three model in natural language processing has the highest number of downloads
+click: GPT2

@@ -1,0 +1,33 @@
+## Inspiration
+
+In a rapidly evolving world driven by technology, the potential of artificial intelligence knows no bounds. Imagine a vast repository of AI models, a virtual treasure trove, waiting to be explored. A place where you, the AI engineers, can find the perfect match for your projects effortlessly. This is what we aspire to create - a comprehensive website that serves as a hub for all things AI models.
+
+Our ambitious project aims to empower AI engineers to shape the future in a technology-driven world. We envision a comprehensive website, serving as a hub for a vast collection of AI models, where engineers can effortlessly find the perfect match for their projects. With our platform, we strive to equip AI engineers with the tools they need to push the boundaries of innovation, be it in computer vision, natural language processing, robotics, or other cutting-edge fields.
+
+## What it does
+
+Our project is a website that serves as a comprehensive collection of AI models, catering specifically to AI engineers seeking models based on their requirements in various fields. The platform is designed to be user-friendly and efficient, employing a TiDB serverless database for seamless data management.
+
+Key Features:
+
+1. Extensive AI Model Repository: The website hosts an extensive database of AI models from diverse fields, such as computer vision, natural language processing, robotics, and more. AI engineers can explore and find models suitable for their specific needs.
+
+2. Targeted User Base: Our platform is specifically tailored for AI engineers who seek efficient ways to discover AI models aligned with their project requirements.
+
+3. TiDB Serverless Database: We utilize the TiDB serverless database for its scalability, high availability, and cost-effectiveness. This ensures smooth and reliable management of the vast collection of AI models on our website.
+
+4. Intelligent Search Functionality: The website incorporates an intelligent search function that understands user input prompts. AI engineers can describe their desired model, and the platform will provide relevant suggestions and matches.
+
+5. User-Friendly Interface: We prioritize a user-friendly interface, ensuring that AI engineers can navigate the platform effortlessly, find models quickly, and access essential details for each AI model.
+
+Our goal is to create a platform that empowers AI engineers to efficiently discover and utilize AI models in their projects, streamlining their development processes and enhancing their productivity.
+
+## How we built it
+
+## Challenges we ran into
+
+## Accomplishments that we're proud of
+
+## What we learned
+
+## What's next for Model Master

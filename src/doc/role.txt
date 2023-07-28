@@ -1,0 +1,8 @@
+Full Stack Engineer + Project Manager
+
+Implement back-end functionalities, such as authentication, database interactions (TiDB+sql), and APIs (Flask).
+Ensure seamless integration between the back-end and front-end components.
+Carry out testing and deployment processes.
+Plan the project timeline, milestones, and deliverables in coordination with the team.
+Allocate tasks to team members based on their strengths and expertise.
+Monitor and track the progress of the project against the established schedule.
