@@ -1,0 +1,52 @@
+  <script>
+    function makeAPIRequest(input_prompt, callback) {
+  const encodedInput = encodeURIComponent(input_prompt);
+  const apiUrl = `http://localhost:8080/api/prompt2data?prompt=${encodedInput}`;
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', apiUrl, true);
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        const jsonData = JSON.parse(xhr.responseText);
+        const value1 = jsonData.value1;
+        const value2 = jsonData.value2;
+
+        // Instead of returning, pass the values to the callback function
+        callback(`Response: ${value1}\nModel_List: ${value2}`);
+      } else {
+        console.error('Error:', xhr.status, xhr.statusText);
+
+        // Instead of returning, pass the error message to the callback function
+        callback(`Error: ${xhr.status} - Possible Cause is lack of REST API at localhost:8080`);
+      }
+    }
+  };
+
+  xhr.send();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const promptSearchButton = document.getElementById('promptSearchButton');
+
+  if (promptSearchButton) {
+    promptSearchButton.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      const searchValue = document.getElementById('search').value;
+
+      // Call makeAPIRequest and pass a callback function to handle the response
+      makeAPIRequest(searchValue, function(response) {
+        // The response from makeAPIRequest will be available here
+        // Displaying the response in the alert on the `index.html` page
+        // alert(response);
+
+        // After displaying the alert, navigate to prompt-search-result.html with the API response as a query parameter
+        const encodedResponse = encodeURIComponent(response);
+        window.location.href = `prompt-search-result?response=${encodedResponse}`;
+      });
+    });
+  }
+});
+  </script>

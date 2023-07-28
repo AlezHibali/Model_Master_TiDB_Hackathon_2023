@@ -1,0 +1,16 @@
+curl -i --digest --user "1A5RPEbh:3884202b-a9eb-406f-af4c-c26fc3a724b5" --request GET --url "https://api.tidbcloud.com/api/v1beta/projects"
+
+curl -i --digest --user "1A5RPEbh:3884202b-a9eb-406f-af4c-c26fc3a724b5" --request GET --url "https://api.tidbcloud.com/api/v1beta/projects?page=1&page_size=10"
+
+mysql --connect-timeout 15 -u '4Ro6YCY7Vu8bQRe.root' -h gateway01.eu-central-1.prod.aws.tidbcloud.com -P 4000 -D test --ssl-mode=VERIFY_IDENTITY --ssl-ca=<path_to_ca_cert> -p<your_password>
+
+command = "curl --digest --user \"q472yi96:6bc870a3-43f7-4dbb-a7f8-b97eaf50a565\"\
+--request POST \"https://eu-central-1.data.tidbcloud.com/api/v1beta/app/chat2query-YdBxnPzY/endpoint/chat2data\"\
+--header \"content-type: application/json\"\
+--data-raw \"{\
+\\\"cluster_id\\\": \\\"1379661944646225457\\\",\
+\\\"database\\\": \\\"Football_Club\\\",\
+\\\"tables\\\": [\\\"Football_Club\\\"],\
+\\\"instruction\\\": \\\"top 5 club that has the smallest average age, ignore ones that are zero or null\\\"\
+}\"\
+"

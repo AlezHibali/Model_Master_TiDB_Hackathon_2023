@@ -1,0 +1,7 @@
+chat2query: q472yi96:6bc870a3-43f7-4dbb-a7f8-b97eaf50a565
+
+proj_id: 1372813089444651289
+
+cluster0_id: 1379661944646225457
+
+path_to_ca_cert: C:\Users\Ali Tian\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\certifi\cacert.pem

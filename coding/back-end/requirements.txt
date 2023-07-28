@@ -1,0 +1,10 @@
+certifi
+requests
+
+mysqlclient
+
+flask
+waitress
+urllib
+
+pandas
