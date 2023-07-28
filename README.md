@@ -39,6 +39,14 @@ pip install -r requirements.txt
 
 ## Usage
 
+IMPORTANT: RUN THIS CODE BEFORE HEADING TO THE WEBSITE
+
+```bash
+python api.py
+```
+
+This script starts a Flask server, exposing a REST API for retrieving the data.
+
 First, run the scraper:
 
 ```bash
@@ -47,15 +55,8 @@ python scraper.py
 
 This script uses BeautifulSoup and requests to scrape data from Hugging Face and stores it in the TiDB.
 
-Then, run the API server:
 
-```bash
-python api.py
-```
 
-This script starts a Flask server, exposing a REST API for retrieving the data.
-
-Finally, open `index.html` in your browser to view the data in the webpage.
 
 ## API
 
