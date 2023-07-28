@@ -61,7 +61,7 @@ This code opens and listens at localhost:8080, and makes corresponding API proce
 
 After opening the REST API, go to website https://model-master.webflow.io/
 
-See FAQ#1(###-1.-Resolution-Problem) if needed.
+See FAQ#1(#FQA) if needed.
 
 ## Additional Usage
 
