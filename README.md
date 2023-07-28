@@ -19,14 +19,23 @@ This project is supported by Hugging Face, TiDB, and Webflow.
 Clone the repository using git:
 
 ```bash
-git clone https://github.com/yourusername/model-master.git
+git clone https://github.com/AlezHibali/Model_Master_TiDB_Hackathon_2023.git
 ```
 
 Navigate to the project directory:
 
 ```bash
-cd model-master
+cd Model_Master_TiDB_Hackathon_2023
+cd coding
+cd back_end
 ```
+
+Install required packages in Python:
+
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Usage
 
