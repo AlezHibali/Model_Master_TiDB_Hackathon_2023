@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-IMPORTANT: RUN THIS CODE BEFORE HEADING TO THE WEBSITE
+**IMPORTANT: RUN THIS CODE BEFORE HEADING TO THE WEBSITE**
 
 make sure you are in `./coding/back_end/`
 
