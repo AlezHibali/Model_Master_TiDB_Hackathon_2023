@@ -1,0 +1,37 @@
+Name,Slug,Collection ID,Item ID,Created On,Updated On,Published On,Description,Icon,Color,Big model category
+Conversational,conversational,64bf247eb95ced8236098cca,64bf4676f56840772682a314,Tue Jul 25 2023 03:50:14 GMT+0000 (Coordinated Universal Time),Tue Jul 25 2023 03:50:14 GMT+0000 (Coordinated Universal Time),,,,,natural-language-processing
+Fill-Mask,fill-mask,64bf247eb95ced8236098cca,64bf468d99e46f775cf51be3,Tue Jul 25 2023 03:50:37 GMT+0000 (Coordinated Universal Time),Tue Jul 25 2023 03:50:37 GMT+0000 (Coordinated Universal Time),,,,,natural-language-processing
+Text Generation,text-generation,64bf247eb95ced8236098cca,64bf248dbb1d30d77453dcbd,Tue Jul 25 2023 01:25:33 GMT+0000 (Coordinated Universal Time),Tue Jul 25 2023 04:00:49 GMT+0000 (Coordinated Universal Time),,,,#9bdffe,natural-language-processing
+Question Answering,,,,,,,,,,natural-language-processing
+Sentence Similarity,,,,,,,,,,natural-language-processing
+Summarization,,,,,,,,,,natural-language-processing
+Table Question Answering,,,,,,,,,,natural-language-processing
+Text Classification,,,,,,,,,,natural-language-processing
+Text2Text Generation,,,,,,,,,,natural-language-processing
+Token Classification,,,,,,,,,,natural-language-processing
+Translation,,,,,,,,,,natural-language-processing
+Zero-Shot Classification,,,,,,,,,,natural-language-processing
+Reinforcement Learning,,,,,,,,,,reinforcement-learning
+Robotics,,,,,,,,,,reinforcement-learning
+Tabular Classification,,,,,,,,,,tabular
+Tabular Regression,,,,,,,,,,tabular
+Audio Classification,,,,,,,,,,audio
+Audio-to-Audio,,,,,,,,,,audio
+Automatic Speech Recognition,,,,,,,,,,audio
+Text-to-Speech,,,,,,,,,,audio
+Voice Activity Detection,,,,,,,,,,audio
+Depth Estimation,,,,,,,,,,computer-vision
+Image Classification,,,,,,,,,,computer-vision
+Image Segmentation,,,,,,,,,,computer-vision
+Image-to-Image,,,,,,,,,,computer-vision
+Object Detection,,,,,,,,,,computer-vision
+Unconditional Image Generation,,,,,,,,,,computer-vision
+Video Classification,,,,,,,,,,computer-vision
+Zero-Shot Image Classification,,,,,,,,,,computer-vision
+Document Question Answering,,,,,,,,,,multimodel
+Feature Extraction,,,,,,,,,,multimodel
+Graph Machine Learning,,,,,,,,,,multimodel
+Image-to-Text,,,,,,,,,,multimodel
+Text-to-Image,,,,,,,,,,multimodel
+Text-to-Video,,,,,,,,,,multimodel
+Visual Question Answering,,,,,,,,,,multimodel
