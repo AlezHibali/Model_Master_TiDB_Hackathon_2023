@@ -4,7 +4,7 @@
 
 Model Master is an open-source project designed to scrape data from Hugging Face and store the information using TiDB. The project employs Flask to construct a REST API, processing HTTP requests and interacting with the TiDB C2Q endpoint. The scraped data includes model name, size, popularity, link, task, languages, etc. The front end uses the Webflow content management system and hand-written JavaScript to display the information on a webpage.
 
-This project is supported by Hugging Face, TiDB, and Webflow.
+This project is utilizing Hugging Face, TiDB, and Webflow.
 
 ## Dependencies
 
@@ -16,7 +16,7 @@ This project is supported by Hugging Face, TiDB, and Webflow.
 6. TiDB
 7. Webflow CMS
 
-Check ./coding/back_end/requirements.txt for more information.
+Check `./coding/back_end/requirements.txt` for more information.
 
 ## Installation
 
@@ -44,36 +44,32 @@ pip install -r requirements.txt
 
 IMPORTANT: RUN THIS CODE BEFORE HEADING TO THE WEBSITE
 
-make sure you are in ./coding/back_end/
+make sure you are in `./coding/back_end/`
+
 Run:
 
 ```bash
 python RESTapi.py
 ```
 
-This code.
+This code opens and listens at localhost:8080, and makes corresponding API processing.
 
-First, run the scraper:
+After opening the REST API, go to website https://model-master.webflow.io/
+
+## Additional Usage
+
+If you want to use the Scraper:
+
+make sure you are in `./coding/back_end/data_collection/`
+
+Run:
 
 ```bash
-python scraper.py
+python soup.py
 ```
 
 This script uses BeautifulSoup and requests to scrape data from Hugging Face and stores it in the TiDB.
 
-
-
-
-## API
-
-The API server provides several endpoints to fetch data. For example:
-
-- `GET /models`: Get a list of all models.
-- `GET /models/<id>`: Get details of a specific model.
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on how to submit a pull request.
 
 ## License
 
@@ -81,8 +77,8 @@ Model Master is [MIT Licensed](LICENSE).
 
 ## Support
 
-For any questions or issues, please reach out to us on GitHub or email us at support@example.com.
+For any questions or issues, please reach out to us on GitHub or email us at ali.daixin.tian@gmail.com.
 
 ## Acknowledgements
 
-We would like to thank Hugging Face, TiDB, and Webflow for their support in this project.
+We would like to thank Hugging Face, TiDB, and Webflow for their amazing functionalities that are used in this project.
