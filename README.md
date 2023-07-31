@@ -100,3 +100,11 @@ Scale might make your resolution less than 1440px, try to lower the scale
 
 ![alt text](https://github.com/AlezHibali/Model_Master_TiDB_Hackathon_2023/blob/main/src/README_img/faq1.png)
 
+### 2. Certificate
+
+Make sure you have ca certificate in your device. Run below in Python to check that:
+
+```
+import certifi
+path_to_ca_cert = certifi.where()
+```
