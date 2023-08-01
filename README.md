@@ -42,6 +42,8 @@ Install required packages in Python:
 pip install -r requirements.txt
 ```
 
+If it doesn't work, try pip install every line in ./coding/back_end/requirements.txt
+
 ## Usage
 
 **IMPORTANT: RUN THIS CODE BEFORE HEADING TO THE WEBSITE**
