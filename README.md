@@ -42,7 +42,9 @@ Install required packages in Python:
 pip install -r requirements.txt
 ```
 
-If it doesn't work, try pip install every line in ./coding/back_end/requirements.txt
+**If it doesn't work, try pip install every line in ./coding/back_end/requirements.txt**
+
+Or check our FAQ#3.
 
 ## Usage
 
@@ -110,3 +112,11 @@ Make sure you have ca certificate in your device. Run below in Python to check t
 import certifi
 path_to_ca_cert = certifi.where()
 ```
+
+### 3. Installation
+
+If you face `ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory`, you might be facing problems of file path being too long.
+
+Do the following:
+
+win+R -> regedit -> HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem -> set LongPathsEnabled value to 1
