@@ -1,0 +1,3 @@
+username,password,status,favorite_models
+admin,admin123,active,gpt2; llama-2-7b
+admin2,admin123,active,gpt2
