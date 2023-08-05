@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 from prompt2data import main_process
 import urllib.parse
 from extract_model_name import process_input_string
-from user_func import addUserInfo, deleteUserInfo, checkUserInfo
+from user_func import addUserInfo, checkUserInfo, getUserFavModels, modifyUserFavModels
 
 app = Flask(__name__)
 
@@ -37,6 +37,7 @@ def prompt2data():
     else:
         return header_processing(jsonify({"message": f"Error with status code {data[1]}"}))
 
+# curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"ali.daixin.tian@gmail.com\", \"password\":\"12345678\"}" http://localhost:8080/api/add_user
 @app.route('/api/add_user', methods=['POST'])
 def add_user():
     # Get the 'username' and 'password' parameters from the JSON request data
@@ -49,18 +50,10 @@ def add_user():
     password = data['password']
 
     # Call the 'addUserInfo' function to add the user to the database
-    addUserInfo(username, password)
-
-    return header_processing(jsonify({'message': 'User information added successfully.'}))
-
-@app.route('/api/delete_user', methods=['POST'])
-def delete_user():
-    # Get the 'username' parameter from the JSON request data
-    username = request.get_json()
-
-    deleteUserInfo(username)
-
-    return header_processing(jsonify({'message': 'User information deleted successfully.'}))
+    if (addUserInfo(username, password)):
+        return header_processing(jsonify({'message': 'User information added successfully.'}))
+    else:
+        return header_processing(jsonify({'message': 'Error: addUserInfo failed.'}))
 
 @app.route('/api/check_user_info', methods=['GET'])
 def check_user_info():
@@ -70,6 +63,37 @@ def check_user_info():
     user_info = checkUserInfo(username)
 
     return header_processing(jsonify(user_info))
+
+# curl "http://localhost:8080/api/get_user_fav?username=admin"
+@app.route('/api/get_user_fav', methods=['GET'])
+def get_user_fav():
+    # Get the 'username' parameter from the HTTP GET request
+    username = request.args.get('username')
+
+    user_info = getUserFavModels(username)
+
+    return header_processing(jsonify(user_info))
+
+# curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"admin_api_trial\", \"model\":\"gpt2\"}" http://localhost:8080/api/modify_user_fav
+@app.route('/api/modify_user_fav', methods=['POST'])
+def modify_user_fav():
+    # Get the 'username' and 'password' parameters from the JSON request data
+    data = request.get_json()
+
+    if not data or 'username' not in data or 'model' not in data:
+        return jsonify({'error': 'Invalid data format. Please provide both username and model name in JSON format.'})
+
+    username = data['username']
+    model = data['model']
+
+    res = modifyUserFavModels(username, model)
+
+    if res == 1:
+        return header_processing(jsonify({'message': 'Model Added to Favorite.'}))
+    elif res == -1:
+        return header_processing(jsonify({'message': 'Model Removed from Favorite.'}))
+    else:
+        return header_processing(jsonify({'message': 'Error: modify_user_fav failed.'}))
 
 if __name__ == '__main__':
     # app.run(debug=True)
