@@ -107,4 +107,40 @@ def modifyUserFavModels(username, model):
 
     return add_delete
 
-    
+# check if the model is favorited by user
+def checkUserFavModels(username, model):
+    # setup connection each time api is called
+    connection = MySQLdb.connect(
+    host="gateway01.eu-central-1.prod.aws.tidbcloud.com",
+    port=4000,
+    user="4Ro6YCY7Vu8bQRe.root",
+    password="xwlcRDBN6WfMLmrk",
+    database="TiDB_hackathon_2023",
+    ssl={
+    "ca": path_to_ca_cert
+    }
+    )
+
+    favorite_models = []
+
+    with connection:
+        with connection.cursor() as cursor:
+            # Execute SQL statement
+            cursor.execute("SELECT favorite_models FROM TiDB_hackathon_2023.user_info WHERE username = '" + username + "'")
+            result = cursor.fetchone()
+
+            if result:
+                favorite_models = result[0]
+
+                # check and handle if empty
+                if favorite_models:
+                    favorite_list = favorite_models.split('; ')
+                else:
+                    favorite_list = []
+
+                # Check if the provided model is already in favorites
+                if model in favorite_list:
+                    return True
+                else:
+                    return False
+    return False

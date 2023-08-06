@@ -4,6 +4,7 @@ requests
 mysqlclient
 
 flask
+flask_cors
 waitress
 urllib
 
