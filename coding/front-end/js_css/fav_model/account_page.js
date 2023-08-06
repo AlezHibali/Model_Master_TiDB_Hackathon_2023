@@ -9,7 +9,7 @@ async function fetchUserFavorites(username) {
 // Function to render the cards
 async function renderCards() {
     const favoritesData = await fetchUserFavorites('ali.daixin.tian@gmail.com');
-    const blockContent = document.querySelector('.w-users-blockcontent.block-content-2');
+    const blockContent = document.querySelector('.block-content-2');
 
     if (favoritesData) {
         const modelListContainer = document.createElement('div');
