@@ -18,8 +18,6 @@ This project is utilizing Flask framework, Hugging Face, TiDB, and Webflow.
 
 **IMPORTANT: WEBSITE ONLY SUPPORTS RESOLUTION OF 1440PX OR MORE**
 
-After opening the REST API, go to website https://model-master.webflow.io/
-
 See FAQ#1 below if needed.
 
 ## Dependencies
@@ -73,7 +71,7 @@ python RESTapi.py
 ```
 
 This code opens and listens at localhost:8080, and makes corresponding API processing.
-
+After opening the REST API, go to website https://model-master.webflow.io/
 
 **IMPORTANT: USE AUTHORIZED ACCOUNT FOR FAVORITE MODEL FUNCTION**
 
