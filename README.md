@@ -2,11 +2,25 @@
 
 ![alt text](https://github.com/AlezHibali/Model_Master_TiDB_Hackathon_2023/blob/main/src/README_img/Screenshot.PNG)
 
+## V2.0 - 2023-08-06 - Hackathon Final Improvements
+
+1. optimize keyword search
+2. improve model card rendering
+3. login/signup function connected to TiDB database
+4. user customized favorite model list (favorite model collections)
+5. revise and optimize model abstracts using Neural Network
+
 ## Overview
 
 Model Master is a comprehensive collection website of AI models, catering specifically to AI engineers seeking models based on their requirements in various fields. We scrape data from Hugging Face and store the information using TiDB. The project employs Flask to construct a REST API, processing HTTP requests and interacting with the TiDB C2Q endpoint. The scraped data includes model name, size, popularity, link, task, languages, etc. The front end uses the Webflow content management system and hand-written JavaScript to display the information on a webpage.
 
 This project is utilizing Flask framework, Hugging Face, TiDB, and Webflow.
+
+**IMPORTANT: WEBSITE ONLY SUPPORTS RESOLUTION OF 1440PX OR MORE**
+
+After opening the REST API, go to website https://model-master.webflow.io/
+
+See FAQ#1 below if needed.
 
 ## Dependencies
 
@@ -61,11 +75,14 @@ python RESTapi.py
 This code opens and listens at localhost:8080, and makes corresponding API processing.
 
 
-**IMPORTANT: WEBSITE ONLY SUPPORTS RESOLUTION OF 1440PX OR MORE**
+**IMPORTANT: USE AUTHORIZED ACCOUNT FOR FAVORITE MODEL FUNCTION**
 
-After opening the REST API, go to website https://model-master.webflow.io/
+To use Favorite Model function, please login with our authorized account:
 
-See FAQ#1 below if needed.
+```bash
+email: ali.daixin.tian@gmail.com
+password: 12345678
+```
 
 ## Additional Usage
 
