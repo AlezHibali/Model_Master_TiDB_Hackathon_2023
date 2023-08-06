@@ -16,6 +16,8 @@ Model Master is a comprehensive collection website of AI models, catering specif
 
 This project is utilizing Flask framework, Hugging Face, TiDB, and Webflow.
 
+Project description at devpost: https://devpost.com/software/project_name-wf9l8d
+
 **IMPORTANT: WEBSITE ONLY SUPPORTS RESOLUTION OF 1440PX OR MORE**
 
 See FAQ#1 below if needed.
