@@ -136,3 +136,7 @@ If you face `ERROR: Could not install packages due to an OSError: [Errno 2] No s
 Do the following:
 
 win+R -> regedit -> HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem -> set LongPathsEnabled value to 1
+
+### 4. Prompt Search No Response
+
+If after clicking Prompt Search it does not jumpt to result page within 15 seconds, it might because of NETWORK FLUCTUATION! Try more times, try another prompt, or wait for few minutes would help!
